@@ -1,0 +1,189 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  font-family: 'Amatic SC', cursive;
+  overflow: hidden;
+}
+
+#stickyHeader {
+  position: sticky;
+  top: 0;
+}
+
+#mainHeader {
+  background-color: #009393;
+  font-size: 75px;
+  text-align: center;
+  padding-left: 125px;
+}
+
+#mapContainer {
+  display: inline;
+  overflow: hidden;
+}
+
+.mapboxgl-map {
+  position: relative;
+  display: block;
+  height: 80vh;
+  width: 75vw;
+  overflow: hidden;
+}
+
+#navigation {
+  float: right;
+  display: inline;
+  margin-right: 20px;
+}
+
+#content {
+  position: absolute;
+  left: 75%;
+  height: 80vh;
+  width: 25vw;
+  top: 94.5px;
+  background-color: #c9d1d2;
+  overflow-y: hidden;
+}
+
+#navigation * {
+  font-size: 20px;
+  display: inline;
+  margin-right: 5px;
+}
+
+a:visited {
+  color: black;
+}
+
+#footer {
+  height: 20vh;
+  background-color: #009393;
+  display: block;
+}
+
+#assets {
+  margin: 0px;
+  text-align: center;
+  font-size: 50px;
+}
+
+#assetList {
+  margin: 5px;
+  max-height: 65vh;
+  display: block;
+  font-size: 40px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-left: 0;
+}
+
+.mapboxgl-popup-content {
+  font: 30px 'Amatic SC', cursive;
+  padding: 0px !important;
+  width: 400px;
+}
+
+.mapboxgl-popup-content .popName {
+  background: #009393;
+}
+
+.mapboxgl-popup-content > * {
+  padding: 8px;
+}
+
+data {
+  display: none;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 10px;
+}
+
+a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid silver;
+}
+
+#searchInput {
+  display: block;
+  width: 95%;
+  margin-left: 5px;
+  height: 20px;
+  padding: 2px;
+  border-radius: 2px;
+  border: 1px;
+}
+
+#createHeader {
+  text-align: center;
+  font-size: 45px;
+}
+
+#assetBoxes > label,
+select,
+#asset_name {
+  margin: 5px;
+  width: 95%;
+  font-size: 30px;
+  display: block;
+  font-weight: bold;
+}
+
+#assetBoxes input,
+#dropPin {
+  margin: 0 0 20px 5px;
+  font-size: 20px;
+  font-family: 'Amatic SC', cursive;
+  background-color: #f6f6f4;
+  border-style: groove;
+  border-width: 1px;
+  word-wrap: break-word;
+}
+
+#assetBoxes select {
+  margin: 0 0 20px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+  background-color: #f6f6f4;
+  border-style: groove;
+  border-width: 1px;
+}
+
+#submitButton,
+#dropPin {
+  font-weight: bold;
+  text-align: left !important;
+  background-color: #ee36367a !important;
+}
+
+#asset_address {
+  width: 93%;
+  margin: 0 0 20px 5px !important;
+  font-size: 20px;
+  font-family: 'Amatic SC', cursive;
+  background-color: #f6f6f4;
+  border-style: groove;
+  border-width: 1px;
+  word-wrap: break-word;
+}
+
+#errorMessage {
+  font-size: 35px;
+  text-align: center;
+  color: red;
+}
